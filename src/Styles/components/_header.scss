@@ -1,4 +1,18 @@
 .header {
-  background-color: red;
-  height: 200px;
+  height: 75px;
+  display: flex;
+  justify-content: space-evenly;
+
+  .left-side, .right-side {
+
+    ul {
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      li {
+        margin: 25px;
+      }
+    }
+  }
 }

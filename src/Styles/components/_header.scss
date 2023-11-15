@@ -2,6 +2,10 @@
   height: 75px;
   display: flex;
   justify-content: space-evenly;
+  font-weight: bold;
+  font-size: larger;
+
+
 
   .left-side, .right-side {
 
@@ -9,10 +13,36 @@
       height: 100%;
       display: flex;
       align-items: center;
+      
+      .nav-active {
+
+        li{
+          color: orange ;
+        }
+      }
 
       li {
-        margin: 25px;
+        margin: 15px;
+        color: black;
       }
+
+
     }
   }
+
+  .left-side {
+
+    li:hover {
+      color: orange;
+    }
+  }
+
+  .right-side {
+
+    li:hover {
+      color: grey;
+    }
+  }
+
+  
 }

@@ -1,14 +1,23 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <div className="header">
       <div className="left-side">
         <ul>
-          <li>Rent</li>
-          <li>Share</li>
-          <li>Ride</li>
-          <li>SEVENT+ Abonnement auto</li>
+          <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
+            <li>Rent</li>
+          </NavLink>
+          <NavLink to="/share" className={(nav) => (nav.isActive ? "nav-active" : "")}>
+            <li>Share</li>
+          </NavLink>
+          <NavLink to="/ride" className={(nav) => (nav.isActive ? "nav-active" : "")}>
+            <li>Ride</li>
+          </NavLink>
+          <NavLink to="/plus" className={(nav) => (nav.isActive ? "nav-active" : "")}>
+            <li>SEVENT+ Abonnement auto</li>
+          </NavLink>
         </ul>
       </div>
 

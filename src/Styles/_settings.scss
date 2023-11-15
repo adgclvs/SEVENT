@@ -3,11 +3,16 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
+  border: none;
 }
 
 button {
-  border: none;
+  
   background: none;
   outline: none;
 }
 
+input {
+  outline: none;
+  border: none;  
+}

@@ -1,10 +1,16 @@
 import { faCar, faTruckMoving } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Search from "./Search";
 
 const CarForm = () => {
+  const [isActive, setIsActive] = useState(false);
+
+  const toggleActiveState = () => {
+    setIsActive(!isActive);
+  };
+
   return (
     <div className="carForm">
       <div className="car-or-utilities">
@@ -25,6 +31,18 @@ const CarForm = () => {
         <div className="place">
           <p>Retrait et retour</p>
           <Search />
+        </div>
+        <div className="diferent-return">
+          {isActive ? (
+            <div className="diferent-return-active">
+              <Search />
+              <p onClick={toggleActiveState}>*</p>
+            </div>
+          ) : (
+            <div className="diferent-return-inactive">
+              <p onClick={toggleActiveState}>+ Lieu de retour différent</p>
+            </div>
+          )}
         </div>
       </div>
 

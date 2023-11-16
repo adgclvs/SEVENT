@@ -1,6 +1,7 @@
 .carForm {
+  background-color: red;
   padding: 15px;
-  background-color: white;
+  // background-color: white;
   height: 184px;
   width: 1184px;
   position: absolute;
@@ -8,6 +9,7 @@
   top: 148px;
 
   .car-or-utilities{
+    background-color: cyan;
     
     display: flex;
     align-items: center;
@@ -45,13 +47,19 @@
 
   .choosing {
     display: flex;
+    background-color: greenyellow;
+    align-items: center;
 
     .place {
-
+      background-color: yellow;
       p{
         font-size: small;
         
       }
+    }
+
+    .diferent-return{
+      
     }
   }
 

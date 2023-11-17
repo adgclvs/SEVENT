@@ -2,6 +2,7 @@ import { faCar, faTruckMoving } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import Date from "./Date";
 import Search from "./Search";
 
 const CarForm = () => {
@@ -29,20 +30,37 @@ const CarForm = () => {
       </div>
       <div className="choosing">
         <div className="place">
-          <p>Retrait et retour</p>
-          <Search />
+          {!isActive ? <p>Retrait et retour</p> : <p>Prise en charge</p>}
+
+          <Search showStar={false} toggleActiveState={toggleActiveState} />
         </div>
         <div className="diferent-return">
           {isActive ? (
             <div className="diferent-return-active">
-              <Search />
-              <p onClick={toggleActiveState}>*</p>
+              <p>retour</p>
+              <div className="text-input">
+                <Search showStar={true} toggleActiveState={toggleActiveState} />
+                <p onClick={toggleActiveState}></p>
+              </div>
             </div>
           ) : (
             <div className="diferent-return-inactive">
               <p onClick={toggleActiveState}>+ Lieu de retour différent</p>
             </div>
           )}
+        </div>
+        <div className="choosing-date">
+          <div className="start-date">
+            <p>Date de départ</p>
+            <Date />
+          </div>
+          <div className="end-date">
+            <p>Date de retour</p>
+            <Date />
+          </div>
+        </div>
+        <div className="send-choose">
+          <button>Voir les véhicules</button>
         </div>
       </div>
 

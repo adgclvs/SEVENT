@@ -10,4 +10,32 @@
       object-fit: cover;
     }
   }
+
+  .content{
+    margin: 0 90px ;
+    .offers{
+      padding: 75px 0 37.5px 0;
+
+      text-align: center;
+
+      .offers-content {
+
+        display: flex;
+        justify-content: center;
+        background-color: red;
+      }
+    }
+
+    .subscription {
+      padding: 75px 0 37.5px 0;
+      text-align: center;
+
+      .subscription-content{
+
+        display: flex;
+        justify-content: center;
+        background-color: red;
+      }
+    }
+  }
 }

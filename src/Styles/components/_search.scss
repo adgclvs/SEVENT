@@ -1,5 +1,6 @@
 .search {
-  
+  display: flex;
+  align-items: center;
   height: 35px;
   width: 275px;
   border-bottom: 1px solid red;
@@ -10,5 +11,11 @@
     height: 100%;
     margin-left: 5px;
     font-size: large;
+  }
+
+  .input-cross{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
   }
 }

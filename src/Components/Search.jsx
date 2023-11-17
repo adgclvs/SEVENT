@@ -1,8 +1,14 @@
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
-const Search = () => {
+const Search = ({ showStar, toggleActiveState }) => {
+  const handleClick = () => {
+    if (showStar) {
+      toggleActiveState();
+    }
+  };
+
   return (
     <div className="search">
       <FontAwesomeIcon
@@ -11,8 +17,12 @@ const Search = () => {
         size="l"
         style={{ color: "#121212" }}
       />
-
-      <input type="text" placeholder="Aéroport, ville ou adresse" />
+      <div className="input-cross">
+        <input type="text" placeholder="Aéroport, ville ou adresse" />
+        <p onClick={handleClick}>
+          {showStar ? <FontAwesomeIcon icon={faXmark} style={{ color: "#000000" }} /> : ""}
+        </p>
+      </div>
     </div>
   );
 };

@@ -1,9 +1,10 @@
 .header {
+  font-family: $RobotoCondensed;
   height: 75px;
   display: flex;
   justify-content: space-evenly;
   font-weight: bold;
-  font-size: larger;
+  
 
 
 
@@ -17,13 +18,13 @@
       .nav-active {
 
         li{
-          color: orange ;
+          color: $orange ;
         }
       }
 
       li {
         margin: 15px;
-        color: black;
+        color: $black;
       }
 
 
@@ -31,13 +32,16 @@
   }
 
   .left-side {
+    font-size:large;
 
     li:hover {
-      color: orange;
+      color: $orange;
     }
   }
 
   .right-side {
+
+    font-size:small;
 
     li:hover {
       color: grey;

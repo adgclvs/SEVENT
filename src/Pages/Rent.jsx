@@ -8,9 +8,8 @@ import Offer from "../Components/Offer";
 const Rent = () => {
   return (
     <div className="Rent">
-      <div className="header">
-        <Header />
-      </div>
+      <Header />
+
       <div className="home-pic-container">
         <img src={home_pic} alt="Background car" id="home-pic" />
       </div>

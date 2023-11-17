@@ -1,9 +1,31 @@
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url(../Assets/fonts/RobotoCondensed-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../Assets/fonts/Roboto-Regular.ttf);
+}
+
+$RobotoCondensed: "RobotoCondensed", sans-serif; 
+$Roboto: "Roboto", sans-serif; 
+
+$orange: rgb(255,95,0);
+$grey: rgb(81,81,81);
+$black: rgb(25,25,25);
+
 * {
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
   border: none;
+  font-family: $Roboto;
+}
+
+h1,h2,h3,h4,h5,h6,input,button{
+  font-family: $RobotoCondensed;
 }
 
 button {

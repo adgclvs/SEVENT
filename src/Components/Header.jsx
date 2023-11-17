@@ -1,3 +1,5 @@
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { NavLink } from "react-router-dom";
 
@@ -24,7 +26,10 @@ const Header = () => {
       <div className="right-side">
         <ul>
           <li>Gérer les réservations</li>
-          <li>FR | €</li>
+          <li>
+            <FontAwesomeIcon icon={faGlobe} style={{ color: "#000000" }} />
+            FR | €
+          </li>
           <li>Connexion | Inscription</li>
         </ul>
       </div>

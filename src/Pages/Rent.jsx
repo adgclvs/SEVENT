@@ -49,7 +49,20 @@ const Rent = () => {
           </div>
         </div>
         <div className="world">
-          <div className="world-map"></div>
+          <div className="world-title">
+            <h1>Les agences SEVENT dans le monde</h1>
+          </div>
+          <div className="world-map">
+            <div className="left">
+              <h1>2000+</h1>
+              <h3>Agences dans le monde</h3>
+            </div>
+            <img src="./Assets/img/world-map.png" alt="" />
+            <div className="right">
+              <h1>105+</h1>
+              <h3>Pays</h3>
+            </div>
+          </div>
           <div className="world-content"></div>
         </div>
         <div className="footer">

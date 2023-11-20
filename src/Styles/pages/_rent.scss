@@ -35,5 +35,38 @@
         justify-content: center;
       }
     }
+
+    .discovery {
+      text-align: center;
+      padding: 50px;
+
+      .discovery-title {
+
+      }
+
+      .discovery-content{
+        display: flex;
+        justify-content: center;
+
+        img {
+          max-width: 150px;
+          height: auto;
+        }
+      }
+    }
+
+    .world {
+      .world-title{
+        text-align: center;
+        margin: 50px;
+      }
+      .world-map{
+        display: flex;
+
+        .left {
+          text-align: center;
+        }
+      }
+    }
   }
 }

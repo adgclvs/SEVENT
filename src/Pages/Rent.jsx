@@ -2,6 +2,7 @@ import React from "react";
 import home_pic from "../Assets/img/home-pic.jpg";
 import Car from "../Components/Car";
 import CarForm from "../Components/CarForm";
+import Description from "../Components/Description";
 import Header from "../Components/Header";
 import Offer from "../Components/Offer";
 
@@ -63,10 +64,21 @@ const Rent = () => {
               <h3>Pays</h3>
             </div>
           </div>
-          <div className="world-content"></div>
+          <div className="world-content">Trouver une agence</div>
         </div>
         <div className="footer">
-          <div className="first-footer"></div>
+          <div className="first-footer">
+            <div className="first-footer-header">
+              <ul>
+                <li>SEVENT en France</li>
+                <li>SEVENT en Europe et dans le Monde</li>
+                <li>Services proposés par SEVENT</li>
+              </ul>
+            </div>
+            <div className="frist-footer-description">
+              <Description id={1} />
+            </div>
+          </div>
           <div className="second-footer"></div>
         </div>
       </div>

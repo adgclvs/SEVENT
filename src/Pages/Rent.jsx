@@ -16,7 +16,7 @@ const Rent = () => {
       </div>
       <CarForm />
       <div className="content">
-        <div className="offers">
+        {/* <div className="offers">
           <div className="offers-title">
             <h1>Explorez les offres et produit SEVENT</h1>
           </div>
@@ -25,7 +25,7 @@ const Rent = () => {
             <Offer OfferId={2} />
             <Offer OfferId={3} />
           </div>
-        </div>
+        </div> */}
         <div className="subscription">
           <div className="subscription-title">
             <h1>SEVENT+ votre auto: prix mensuel fixe, sans engagement, tout inclus!</h1>

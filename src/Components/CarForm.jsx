@@ -59,7 +59,7 @@ const CarForm = () => {
             <Date />
           </div>
         </div>
-        <div className="send-choose">
+        <div className="send-choice">
           <button>Voir les véhicules</button>
         </div>
       </div>

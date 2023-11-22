@@ -12,7 +12,8 @@
   }
 
   .content{
-    margin: 0 90px ;
+    background-color: violet;
+    margin: 0 360px ;
     .offers{
       padding: 75px 0 37.5px 0;
 
@@ -26,13 +27,18 @@
     }
 
     .subscription {
-      padding: 75px 0 37.5px 0;
+      padding: 37.5px 0;
       text-align: center;
+
+      .subscription-title {
+        padding: 22.5px;
+      }
 
       .subscription-content{
 
         display: flex;
         justify-content: center;
+        padding-bottom: 30px;
       }
     }
 
@@ -69,19 +75,28 @@
     }
 
     .footer{
-      display: flex;
-      justify-content: center;
+      
+      background-color: red;
 
-      h1 {
-        font-size: large;
-      }
-      ul {
-        display: flex;
-
-        li {
-          margin: 20px;
+      .first-footer{
+        .first-footer-header{
+          background-color: cyan;
+          display: flex;
+          justify-content: center;
+          h1 {
+            font-size: large;
+          }
+          ul {
+            display: flex;
+    
+            li {
+              margin: 20px;
+            }
+          }
         }
       }
+
+      
     }
   }
 }

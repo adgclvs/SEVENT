@@ -47,21 +47,41 @@
   .choosing {
     display: flex;
     align-items: center;
+    padding: 7.5px;
 
     .place {
+      padding: 7.5px;
       p{
         font-size: small;
         
       }
     }
 
+    .different-return{
+      padding: 7.5px;
+      
+    }
+
+    .diferent-return-inactive{
+      padding: 7.5px;
+      p{
+        background-color: red;
+        min-width: 292.5px;
+      }
+    }
+
     .choosing-date{
+      padding: 7.5px;
       display: flex;
       width: 390px;
 
       .start-date, .end-date {
         width: 100%;
       } 
+    }
+
+    .send-choice{
+      padding: 7.5px;
     }
 
   }

@@ -1,3 +1,5 @@
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { OfferData } from "../Data/OfferData";
 
@@ -6,10 +8,18 @@ const Offer = ({ OfferId }) => {
 
   return (
     <div className="Offer">
-      <img src={currentOffer.img} alt="" />
-      <h2>{currentOffer.title}</h2>
-      <h5>{currentOffer.text}</h5>
-      <h4>{currentOffer.clickable}</h4>
+      <div className="content">
+        <div className="image">
+          <img src={currentOffer.img} alt="" />
+        </div>
+        <h3>{currentOffer.title}</h3>
+        <p>{currentOffer.text}</p>
+        <div className="click"></div>
+        <div className="chevron">
+          <FontAwesomeIcon icon={faChevronRight} style={{ color: "#000000" }} />
+        </div>
+        <span>{currentOffer.clickable}</span>
+      </div>
     </div>
   );
 };

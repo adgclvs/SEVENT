@@ -1,3 +1,26 @@
 .Offer {
-  padding: 7.5px;
+  .content{
+
+    .image{
+      img{
+        width: 122px;
+      }
+
+      h3{
+        padding-top: 18.75px;
+      }
+
+      p{
+        padding-bottom: 3.75px;
+      }
+    }
+  }
+
+  .click{
+    margin-top: 15px;
+
+    .chevron {
+      margin-right: 7.5px;
+    }
+  }
 }

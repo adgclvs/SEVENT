@@ -28,14 +28,18 @@ const Rent = () => {
         </div> */}
         <div className="subscription">
           <div className="subscription-title">
-            <h1>SEVENT+ votre auto: prix mensuel fixe, sans engagement, tout inclus!</h1>
+            <h2>SEVENT+ votre auto: prix mensuel fixe, sans engagement, tout inclus!</h2>
           </div>
           <div className="subscription-content">
-            <Offer OfferId={4} />
-            <Offer OfferId={5} />
+            <div className="subscription-content-left">
+              <Offer OfferId={4} />
+            </div>
+            <div className="subscription-content-right">
+              <Offer OfferId={5} />
+            </div>
           </div>
         </div>
-        <div className="discovery">
+        {/* <div className="discovery">
           <div className="discovery-title">
             <h1>Découvrez la flotte de véhicule chez SEVENT</h1>
           </div>
@@ -80,7 +84,7 @@ const Rent = () => {
             </div>
           </div>
           <div className="second-footer"></div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

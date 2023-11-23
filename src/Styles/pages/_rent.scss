@@ -19,6 +19,30 @@
 
     .subscription{
       background-color: red;
+      padding: 2.5rem 0 ;
+
+      .subscription-title{
+        text-align: center;
+        padding-bottom: 1.5rem;
+      }
+
+      .subscription-content{
+        display: flex;
+        justify-content: center;
+
+        .subscription-content-left{
+          width: 33.33%;
+          margin-left: auto;
+          padding: 0 0.5rem;
+        }
+
+        .subscription-content-right{
+          width: 33.33%;
+          margin-right: auto;
+          padding: 0 0.5rem;
+        }
+
+      }
     }
 
 

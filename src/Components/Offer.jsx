@@ -15,10 +15,14 @@ const Offer = ({ OfferId }) => {
         <h3>{currentOffer.title}</h3>
         <p>{currentOffer.text}</p>
         <div className="click"></div>
+      </div>
+      <div className="clickable">
         <div className="chevron">
-          <FontAwesomeIcon icon={faChevronRight} style={{ color: "#000000" }} />
+          <FontAwesomeIcon icon={faChevronRight} style={{ color: "#ff5f00" }} />
         </div>
-        <span>{currentOffer.clickable}</span>
+        <div className="clickable-content">
+          <span>{currentOffer.clickable}</span>
+        </div>
       </div>
     </div>
   );

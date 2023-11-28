@@ -18,13 +18,13 @@
       .nav-active {
 
         li{
-          color: $orange ;
+          color: $color1 ;
         }
       }
 
       li {
         margin: 15px;
-        color: $black;
+        color: $color3;
       }
 
 
@@ -35,7 +35,7 @@
     font-size:large;
 
     li:hover {
-      color: $orange;
+      color: $color1;
     }
   }
 

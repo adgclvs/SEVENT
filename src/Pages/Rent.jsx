@@ -10,11 +10,14 @@ const Rent = () => {
   return (
     <div className="Rent">
       <Header />
-
-      <div className="home-pic-container">
-        <img src={home_pic} alt="Background car" id="home-pic" />
+      <div className="start">
+        <div className="home-pic-container">
+          <img src={home_pic} alt="Background car" id="home-pic" />
+        </div>
+        <div className="form">
+          <CarForm />
+        </div>
       </div>
-      <CarForm />
       <div className="content">
         {/* <div className="offers">
           <div className="offers-title">

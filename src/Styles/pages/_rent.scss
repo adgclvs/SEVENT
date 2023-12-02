@@ -1,11 +1,57 @@
 .Rent {
 
-  .start{
+  // .start{
+  //   position: relative;
+    
+  //   .home-pic-container {
+  //     // position: relative;
+  //     // width: 100%;
+      
+  //     // #home-pic {
+  //     //   width: 100%;
+  //     //   height: auto;
+  //     //   min-height: 300px;
+  //     //   max-height: 70vh;
+  //     //   object-fit: cover;
+  //     // }
+  //   }
+    
+  //   .form {
+  //     // position: relative;
+  //     // top: 5rem;
+  //     // left: 5rem;
+  //     // max-width: 84rem;
+  //     // padding-left: 2.5rem;
+  //     // padding-right: 2.5rem;
+  //     // margin-left: auto;
+  //     // margin-right: auto;
+  //     // top: 0;
+  //     // left: 0;
+  //     // width: 100%;
+  //     // height: 100%;
+  //     // display: flex;
+  //     // align-items: center;
+  //     // justify-content: center;
+      
+  //   }
+  // }
 
+  .start {
     position: relative;
+  
+    .form {
+      position: absolute;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 100%;
+      height: 100%;
+    }
+  
     .home-pic-container {
       width: 100%;
-      
+  
       #home-pic {
         width: 100%;
         height: auto;
@@ -14,17 +60,23 @@
         object-fit: cover;
       }
     }
-    
-    .form {
-      max-width: 84rem;
-      padding-left: 2.5rem;
-      padding-right: 2.5rem;
-      margin-left: auto;
-      margin-right: auto;
-      
-    }
-    
   }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .content{
       padding: 0 2.5rem;
     margin: auto;
